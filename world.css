@@ -10,18 +10,23 @@ header{
 	text-align: center;
 	margin: auto;
 }
-main{
-	display: flex;
-	flex-direction:column;
-	justify-content: center;
-}
 
 h1{
 	color: white;
 	border-radius: 5px;
 }
+main{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+}
 
 div#controls{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
 	text-align: center;
 	margin: auto;
 }
@@ -36,25 +41,29 @@ div#controls{
 	border-radius: 10px;
 }
 
-#lookup{
-	height: 40px;
-	width: 90px;
+button{
+	height: 75px;
+	width: 150px;
 	background-color: hsl(255, 10%, 50%);
 	color:white;
 	border-radius: 5px;
-	font-size: 20px;
+	font-size: 25px;
+	margin: auto;
 }
 
 input[placeholder]{
-	font-size:18px;
+	font-size:28px;
 }
 
+
 label{
-	font-size: 24px;
+	font-size: 50px;
 	color: white;
+	background-color: hsl(210, 20%, 60%);
+	border-radius: 10px;
 }
 #country{
-	height:40px;
+	height:75px;
 	width: 310px;
 	border-radius: 5px;
 }
