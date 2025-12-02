@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	
 	let search = function(){
 		
-		let newUrl = url+atr+"="+txtField.value;
+		let newUrl = url+atr+"="+txtField.value.trim();
 		console.log("Clicked!: "+ newUrl);
 		
 		fetch(newUrl)

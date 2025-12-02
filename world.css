@@ -33,7 +33,9 @@ div#controls{
 	margin: auto;
 	margin-top: 20px;
 	background-color: hsl(240,50%,60%);
+	border-radius: 10px;
 }
+
 #lookup{
 	height: 40px;
 	width: 90px;
