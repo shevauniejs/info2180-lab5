@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function(event){
 	let resultDiv = document.querySelector("div#result");
 	let txtField = document.querySelector("#country");
 	let atr = txtField.getAttribute("name");
-	const httpRequest = new XMLHttpRequest();
 	
 	let search = function(){
 		
@@ -12,17 +11,14 @@ document.addEventListener("DOMContentLoaded", function(event){
 		console.log("Clicked!: "+ newUrl);
 		
 		fetch(newUrl)
-			.then(response=>{if(!response.ok){console.log(response.status);} return response.text()})
+			.then(response=>{return response.text()})
 			.then(htmlContent=>{
 					resultDiv.innerHTML =""; 
-					resultDiv.append(htmlContent);
+					resultDiv.innerHTML = htmlContent;
 				}).catch(error=>{resultDiv.innerHTML ="";
 								 resultDiv.innerHTML ='<p class="error"> Couldnt get data</p>';
 								 console.log("fetch error");
 								});	
 	}
-	
 	btn.onclick = search;
-	
-	
 });
