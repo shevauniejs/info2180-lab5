@@ -1,6 +1,6 @@
 /* Add your own styles */
 body{
-	background-color: hsl(249, 20%, 60%);
+	background-color: hsl(249, 30%, 80%);
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
@@ -37,7 +37,7 @@ div#controls{
 	width: auto;
 	margin: auto;
 	margin-top: 20px;
-	background-color: hsl(240,50%,60%);
+	background-color: hsl(240,50%,80%);
 	border-radius: 10px;
 }
 
