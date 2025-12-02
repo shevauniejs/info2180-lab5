@@ -1,1 +1,58 @@
 /* Add your own styles */
+body{
+	background-color: hsl(249, 20%, 60%);
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+header{
+	text-align: center;
+	margin: auto;
+}
+main{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+h1{
+	color: white;
+	border-radius: 5px;
+}
+
+div#controls{
+	text-align: center;
+	margin: auto;
+}
+
+#result{
+	text-align: center;
+	height: auto;
+	width: auto;
+	margin: auto;
+	margin-top: 20px;
+	background-color: hsl(240,50%,60%);
+}
+#lookup{
+	height: 40px;
+	width: 90px;
+	background-color: hsl(255, 10%, 50%);
+	color:white;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+input[placeholder]{
+	font-size:18px;
+}
+
+label{
+	font-size: 24px;
+	color: white;
+}
+#country{
+	height:40px;
+	width: 310px;
+	border-radius: 5px;
+}
