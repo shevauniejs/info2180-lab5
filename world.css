@@ -67,3 +67,8 @@ label{
 	width: 310px;
 	border-radius: 5px;
 }
+
+.tab{
+	border: solid;
+	border-color: hsl(220,30%, 60%);
+}

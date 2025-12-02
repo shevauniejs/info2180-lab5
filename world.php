@@ -39,7 +39,7 @@ if($stateSet && !$citySet){
 }else if($citySet){
 	$s_entry = $_GET['country'];
 	$c_entry = $_GET['lookup'];
-	$stmt = $conn->query("SELECT * FROM cities JOIN countries ON countries.code = cities.country_code WHERE countries.name LIKE '%". $s_entry . "%'");
+	$stmt = $conn->query("SELECT cities.name, cities.district, cities.population FROM cities JOIN countries ON countries.code = cities.country_code WHERE countries.name LIKE '%". $s_entry . "%'");
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	echo '<table>';
 		echo '<thead>';
