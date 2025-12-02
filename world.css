@@ -68,7 +68,23 @@ label{
 	border-radius: 5px;
 }
 
-.tab{
+th, tbody, table{
+	height: 60px;
+	width: auto
+	text-align: center;
+	font-size: 40px;
+	font-style: bold;
 	border: solid;
-	border-color: hsl(220,30%, 60%);
+	border-color: hsl(280,70%, 20%);
+	border-radius: 5px;
+	vertical-align: center;
+}
+
+td, tr{
+	height: 30px;
+	text-align: center;
+	font-size: 30px;
+	border: solid;
+	border-color: hsl(250,30%, 60%);
+	border-radius: 5px;
 }
